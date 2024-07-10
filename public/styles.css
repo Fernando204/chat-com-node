@@ -1,0 +1,14 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    background: rgb(0, 0, 68);
+}
+.chat{
+    display: none;
+}

@@ -21,13 +21,12 @@ io.on('connection', (socket) => {
 
     socket.on('chat message', (msg) => {
         quantidade_de_mensagens++
-        console.log(`quantide de mensagens: ${quantidade_de_mensagens}`)
+        console.log(`quantidade de mensagens: ${quantidade_de_mensagens}`)
         io.emit('chat message', msg)
     })
 })
 
 
-server.listen(5001, () => {
+server.listen(5001,'0.0.0.0', () => {
     console.log('server ligado na url: http://localhost:5001')
-})
-
+});

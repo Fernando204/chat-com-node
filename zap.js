@@ -26,7 +26,7 @@ io.on('connection', (socket) => {
     })
 })
 
-
-server.listen(5001,'0.0.0.0', () => {
+const port = process.env.PORT || 5001
+server.listen(port,'0.0.0.0', () => {
     console.log('server ligado na url: http://localhost:5001')
 });

@@ -9,7 +9,7 @@ const chatArea = document.querySelector('.chat')
 var username = '';
 
 logi.addEventListener('submit',(e)=>{
-    e.preventDefault()
+    e.preventDefault();
     logArea.style.display = 'none'
     chatArea.style.display = 'block'
     username = document.getElementById('name').value
@@ -17,7 +17,7 @@ logi.addEventListener('submit',(e)=>{
 })
 
 form.addEventListener('submit', (e)=>{
-    e.preventDefault()
+    e.preventDefault();
     var inpt = document.getElementById('input').value 
     socket.emit('chat message', `${username}: ${inpt}`)
 })

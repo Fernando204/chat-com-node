@@ -18,8 +18,15 @@ logi.addEventListener('submit',(e)=>{
 
 form.addEventListener('submit', (e)=>{
     e.preventDefault();
-    var inpt = document.getElementById('input').value 
-    socket.emit('chat message', `${username}: ${inpt}`)
+    cvs.scrollTop = cvs.scrollHeight;
+    var inpt = document.getElementById('input').value
+    if(inpt.trim() !== ""){
+        document.getElementById('input').value = '';
+        socket.emit('chat message', `${username}: ${inpt}`)
+    } else{
+        alert('mensagem vazia');
+    }
+    
 })
 socket.on('chat message', (msg) => {
     var item = document.createElement('li')

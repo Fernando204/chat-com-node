@@ -7,8 +7,60 @@ body{
     justify-content: center;
     align-items: center;
     color: aliceblue;
-    background: rgb(85, 85, 255);
+    background: rgb(0, 0, 172);
+}
+li{
+    font-size: 20px;
 }
 .chat{
     display: none;
+    height: 80vh;
+    width: 80vw;
+}
+#conversa{
+    position: absolute;
+    height: 65vh;
+    width: 75vw;
+    overflow: hidden;
+    border: solid black;
+    border-radius: 2px;
+    background-color: rgb(47, 91, 185);
+}
+#conversa:hover{
+    overflow: auto;
+}
+input{
+    border-radius: 20px;
+    border: none;
+}
+#login input{
+    height: 10px;
+    padding: 5px;
+    width: 100%;
+}
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 170px;
+}
+.chat form{
+    margin-top: 75vh;
+    position: absolute;
+}
+.chat input{
+    position: absolute;
+    width: 68vw;
+    height: 40px;
+}
+.chat button{
+    width: 10vw;
+    margin-left: 69vw;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+}
+button:hover{
+    background-color: rgba(128, 128, 128, 0.432);
 }

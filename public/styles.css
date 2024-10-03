@@ -7,7 +7,7 @@ body{
     justify-content: center;
     align-items: center;
     color: aliceblue;
-    background: rgb(0, 0, 68);
+    background: rgb(85, 85, 255);
 }
 .chat{
     display: none;

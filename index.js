@@ -9,8 +9,6 @@ const io = socketIO(server)
 
 var quantidade_de_mensagens = 0;
 
-app.use(express.static(path.join(__dirname,'public')));
-
 io.on('connection', (socket) => {
 
     console.log('alguem entrou no chat')
